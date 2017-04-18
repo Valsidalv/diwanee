@@ -1,0 +1,414 @@
+* {
+    box-sizing: border-box;
+}
+
+#kontejner {
+	
+	margin: auto;
+}
+
+/* za telefone */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* za tablet: */
+@media only screen and (min-width: 600px) {
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+ /* za stoni racunar */
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+/* zaglavlje-pocetak */
+nav {			
+	width: 60%;
+	margin:auto;
+}
+
+nav img {
+	width: 30px;
+	height: auto;
+	float: right;
+	display: none;
+
+}
+
+/* navigaciona slika */
+@media only screen and (max-width: 600px){
+	nav img{
+		display: inline;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	nav {
+		width: 100%;
+	}
+}
+
+/*skrivanje menija */
+@media only screen and (max-width: 600px){
+	#meni{		
+		display: none;
+	}
+}
+
+/*prikazivanje menija*/
+.prikaz, .prikaz a{	
+	display: block;
+	width: 100%;
+	height: auto;
+	color: grey;
+	background-color: rgb(55,55,55);
+}
+
+@media only screen and (min-width: 600px){
+	  #meni li:last-child{
+	  display: none;
+	}
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav ul li{
+	display: inline;
+    padding: 8px;
+    float: right;
+
+}
+
+nav ul li a{
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}	
+
+
+#naslov {
+	text-align: center;
+	padding: 70px;
+}
+
+#naslov hr {
+	border-color: red;
+	width: 30px;
+}
+
+/* klasa za elemente u divu prvi */
+.trojka {
+	display: inline-block;
+	
+}
+
+#prvi div {
+	float: left;
+	text-align: center;
+	padding: 30px;
+}
+
+#prvi hr {
+	border-color: lightgrey;
+	width: 30px;
+}
+
+#krug {
+	background-color: rgb(220, 220, 220);
+}
+
+#trougao, #kvadrat {
+	background-color: rgb(240, 240, 240);
+}  
+/* zaglavlje-kraj */
+
+/* poslovi-pocetak */
+#poslovi {  	
+	position: relative;
+	clear: both;
+}
+
+#poslovi div {
+	margin: auto;
+	padding: 20px 50px;
+	text-align: left;
+	position: relative;
+	
+}
+
+#poslovi div a {
+	position: absolute;
+	top: 50%;
+	right: 50px;
+	text-decoration: none;
+	border: 2px solid black;
+	padding: 10px 40px;
+	color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    #poslovi div a {
+       display: none;
+    }
+}
+
+
+#poslovi header {
+	text-align: center;
+	padding: 70px;
+	margin: auto;
+	
+}
+
+#poslovi hr {
+	width: 30px;
+	border-color: red;
+}
+
+#poslovi article {
+	margin: auto;
+	position: relative;
+
+}
+
+@media only screen and (max-width: 600px){
+	#poslovi .fid{
+		background-color: rgb(240, 240, 240);
+	}
+}
+
+#menadzer {
+	color: black;
+	background-color: white;
+}
+
+@media only screen and (min-width: 600px){
+	#menadzer {
+		color: white;
+		background-color: rgb(70,70,70);
+	}
+}
+
+#menadzer div a {
+	border-color: white;
+	color: white;
+}
+
+.vestine {
+	list-style-type: none;
+	margin: 25px 0;
+
+}
+
+.vestine li {
+	display: inline;
+	border: 1px solid black;
+	padding: 5px 15px;
+	margin-right: 5px;
+	color: red;
+	
+}
+
+@media only screen and (max-width: 600px) {
+	.vestine li {
+		border: 0px;
+		padding: 5px;
+		margin: 0px;
+	}
+}
+
+#menadzer .vestine li {
+	color: white;
+	border-color: white;
+}
+
+@media only screen and (max-width: 600px){
+	#menadzer .vestine li{
+		color: red;
+		
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.cetvrti {
+		visibility: hidden;
+	}
+}
+/* poslovi-kraj */
+
+/* jos-pocetak */
+#jos {
+	text-align: center;
+	padding: 70px;
+	
+}
+
+#jos a {
+	text-decoration: none;
+	background-color: rgb(240, 240, 240);
+	padding: 10px;
+	color: black;
+}
+/* jos-kraj */
+
+/* oKompaniji-pocetak */
+#oKompaniji {
+	background-color: rgb(245, 245, 245);
+	padding: 50px;
+}
+
+#oKompaniji div{
+	margin: auto;
+	text-align: center;
+}
+
+#oKompaniji p {
+	text-align: left;
+}
+
+#oKompaniji hr {
+	border-color: red;
+	width: 30px;
+}
+
+#mreze {
+	text-align: center;
+	padding: 30px;	
+}
+
+#mreze p {
+	color: grey;
+	font-size: 20px;
+}
+
+#mreze a {	
+	text-decoration: none;
+	margin: 5px 2px;
+}
+
+#mreze img {
+	width: 40px;
+	height: auto;
+}
+/* oKompaniji-kraj */
+
+/* futer-pocetak */
+footer {
+	text-align: center;
+}
+
+#kontakt {
+	margin: auto;
+	background-color: rgb(50, 50, 50);
+	color: grey;	
+}
+
+#kontakt h4 {
+	padding: 5px;
+	color: white;
+}
+
+#kontakt div {
+	display: inline-block;
+	padding: 40px 60px;
+	text-align: left;	
+}
+
+@media only screen and (max-width: 600px){
+	#kontakt div {
+		display: inline-block;
+		width: 100%;
+		height: auto;
+		padding: 10px 30px;
+		text-align: left;	
+	}
+}
+
+@media only screen and (min-width: 500px){
+	#fudiv ul{
+		display: none;
+	}
+}
+
+#fudiv ul {
+	list-style-type: none;
+	float: left;
+
+}
+
+#fudiv ul li {
+	display: inline;
+	padding: 5px;
+	margin-right: 10px;
+
+}
+
+#fudiv a {
+	text-decoration: none;
+	color: grey;
+}
+
+#donji {
+	position: relative;	
+	background-color: rgb(40,40,40);
+	color: grey;
+	padding: 20px;
+	text-align: center;
+}
+
+#donji ul {
+	list-style-type: none;
+	margin: auto;
+}
+
+#donji ul li {
+	display: inline;
+	
+}
+
+@media only screen and (max-width: 600px){
+	 .donja {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 600px){
+	#donji span{
+		display: none;
+	}
+}
+
+.donja a {
+	text-decoration: none;
+	color: grey;
+	margin-right: 15px;
+}
+/* futer-kraj */
